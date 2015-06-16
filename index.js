@@ -58,7 +58,7 @@ var React = require('react');
           }
           eventHandler(evt);
         }
-      }(React.findDOMNode(this), this.handleClickOutside));
+      }(React.findDOMNode(this), this.handleClickOutside.bind(this)));
 
       var pos = registeredComponents.length;
       registeredComponents.push(this);
